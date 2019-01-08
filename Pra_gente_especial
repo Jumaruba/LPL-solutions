@@ -1,0 +1,103 @@
+num1			equ		0x41c00000
+num2			equ		0x44d82000
+			
+			ldr		R0, =num1
+			ldr		R1, =num2
+			bl		soma
+		
+			end
+			
+			
+sinal		ldr		R1, =0x80000000
+			and		R0,R0, R1
+			lsr		R0, R0, #7
+			mov		PC, LR
+			
+expoentereal
+			lsl		R0, R0, #1
+			lsr		R0, R0, #24
+			sub		R0, R0, #127
+			mov		PC, LR
+			
+mantissa		lsl		R0, R0, #9
+			lsr		R0, R0, #9
+			add		R0, R0, #0x00400000
+			mov		PC, LR
+			
+			
+soma			mov		R2, R0
+			mov		R3, R1
+			mov		R13, LR
+			
+			cmp		R2, #0   ;estamos verificando se algum deles eh zero
+			beq		armazena_R2
+			cmp		R3, #0
+			beq		armazena_R3
+			
+			bl		expoentereal		;vamos calcular os expoentes
+			mov		R11, R0
+			mov		R0, R3
+			bl		expoentereal
+			mov		R12, R0
+			subs		R10, R11, R12
+			
+			mov		R0,R2     ; vamos calcular as mantissas
+			bl		mantissa
+			mov		R8, R0
+			mov		R0, R3
+			bl		mantissa
+			mov		R9, R0	;estamos alinhando as mantissas
+			blpl		alinha_R8  ; se a diferenca for positiva
+			blmi		alinha_R9  ;se a diferenca for negativa
+			
+			mov		R0, R10
+			bl		sinal
+			mov		R6, R0
+			mov		r0, r3
+			bl		sinal
+			mov		r7, r0
+			cmp		r6, r7
+			bleq		soma_m
+			blne		subtrai_m
+
+			bl	normaliza
+			
+			mov		pc, R13
+			
+			
+			
+armazena_R2	MOV		R0, R3
+			mov		pc, lr
+			
+armazena_R3	mov		R0, R2
+			mov		pc, lr
+			
+alinha_R8		lsl		R8, R8, R10
+			sub		R11, R11, R10
+			mov		PC, LR
+			
+alinha_R9		rsb		R10, R10, #0
+			lsl		R9, R9, R10
+			sub		R12, R12, R10
+			mov		pc,lr
+			
+soma_m		add		r0, r9, r8
+			mov		pc, lr
+			
+subtrai_m		sub		r0, r9, r8
+			mov		pc, lr
+
+normaliza				cmp		R0, #0x01000000
+					bpl		normaliza_grande
+					cmp		R0,#0x00800000
+					bmi		normaliza_pequeno
+					mov		pc,lr
+
+normaliza_pequeno		lsl		R0,R0,#1
+					sub		R2,R2,#1
+					b		normaliza
+					
+normaliza_grande		lsr		R0,R0, #1
+					add		R2,R2, #1
+					b		normaliza
+					
