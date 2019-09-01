@@ -1,14 +1,17 @@
 # LPL_solutions
 Here you can find some solutions of the book __"Language Proof and Logic"__.  
-The files are in __prf__ format, which means that it needs to be visualized at the Fitch program.  
-However, with the update (_01 semptember 2019_) __each file can be visualized as jpg format__ in [Images](https://github.com/Jumaruba/LPL-solutions/tree/master/Images).  
+Some files are in __prf__ format, which means that it needs to be visualized at the Fitch program.  
+With the update (_01 semptember 2019_) __each file can be visualized as jpg format__ in [Images](https://github.com/Jumaruba/LPL-solutions/tree/master/Images).  
   
+__If you are not finding a specific problem, search on [All_Files](https://github.com/Jumaruba/LPL-solutions/tree/master/All_Files). If you still didn't find it, write a report on [Issues](https://github.com/Jumaruba/LPL-solutions/issues)__
+
 _This is a repository for study purpose. Feel free to contribute._
 
 ## Updates
 
-__Update__ _01 september 2019_ Added Images of the each file in the [Images](https://github.com/Jumaruba/LPL-solutions/tree/master/Images) folder. All the __prf__ files can be found at [All prf files](https://github.com/Jumaruba/LPL-solutions/tree/master/All%20prf%20files) to make your research easier.
+__Update__ _01 september 2019_ Added Images of the each file in the [Images](https://github.com/Jumaruba/LPL-solutions/tree/master/Images) folder. All files can be found at [All_Files](https://github.com/Jumaruba/LPL-solutions/tree/master/All_Files) to make your research easier.
 
 ## Notes 
 
 - The Proof 6.31 prf __is not__ completed.
+
