@@ -1,13 +1,13 @@
 # LPL_solutions
 Here you can find some solutions of the book __"Language Proof and Logic"__.  
 The files are in __prf__ format, which means that it needs to be visualized at the Fitch program.  
-However, with the update (_01 semptember 2019_) __each file can be visualized as jpg format__ in [Images](LPL-Solutions/Images).  
+However, with the update (_01 semptember 2019_) __each file can be visualized as jpg format__ in [Images](https://github.com/Jumaruba/LPL-solutions/tree/master/Images).  
   
 _This is a repository for study purpose. Feel free to contribute._
 
 ## Updates
 
-__Update__ _01 september 2019_ Added Images of the each file in the [Images](LPL-Solutions/Images/) folder. All the __prf__ files can be found at [All prf files](LPL-solution/All prf files/) to make your research easier.
+__Update__ _01 september 2019_ Added Images of the each file in the [Images](https://github.com/Jumaruba/LPL-solutions/tree/master/Images) folder. All the __prf__ files can be found at [All prf files](https://github.com/Jumaruba/LPL-solutions/tree/master/All%20prf%20files) to make your research easier.
 
 ## Notes 
 
