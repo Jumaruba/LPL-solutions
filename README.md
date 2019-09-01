@@ -7,7 +7,7 @@ _This is a repository for study purpose. Feel free to contribute._
 
 ## Updates
 
-__Update__ _01 september 2019_ Added Images of the each file in the [Images](LPL-Solutions/Images) folder. All the __prf__ files can be found at [All prf files](LPL-solution) to make your research easier.
+__Update__ _01 september 2019_ Added Images of the each file in the [Images](LPL-Solutions/Images/) folder. All the __prf__ files can be found at [All prf files](LPL-solution/All prf files/) to make your research easier.
 
 ## Notes 
 
