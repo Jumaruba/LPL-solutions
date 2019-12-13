@@ -11,6 +11,7 @@ _This is a repository for study purpose. Feel free to contribute._
 
 __Update__ _01 of September 2019_ Added Images of each file. These images can be found grouped at [Images](https://github.com/Jumaruba/LPL-solutions/tree/master/Images). All files can be found at [All_Files](https://github.com/Jumaruba/LPL-solutions/tree/master/All_Files) to make your research easier.  
 __Update__ _13 of December 2019_ Added Proof 13.37
+__Update__ _13 of December 2019__ Accept merge commits by martineizayaga and exogenesis18
 
 ## Notes 
 
