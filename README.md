@@ -30,8 +30,3 @@ __Update__ _01 of September 2019_ Added Images of each file. These images can be
 __Update__ _13 of December 2019_ Added Proof 13.37  
 __Update__ _13 of December 2019_ Accept merge commits by martineizayaga [chapter 10] and exogenesis18    
 __Update__ _08 of April 2020_ Added more images and instructions for how executing  
-
-## Notes 
-
-- The Proof 6.31 prf __is not__ completed.
-
