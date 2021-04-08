@@ -7,6 +7,10 @@ __If you are not finding a specific problem, search on [All_Files](https://githu
 
 _This is a repository for study purpose. Feel free to contribute._
 
+## GradeGrinder
+
+Do not submit this to GradeGrinder, it will flag you as cheating.
+
 ## Instructions to execute 
 
 In case you're not used to github, to execute a specific file, please follow these instructions: 
