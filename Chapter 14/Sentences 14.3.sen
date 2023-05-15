@@ -1,0 +1,3 @@
+7.2.3.24206wnds:Windows 86.2SntFC1654309831934D1654311089038S86705/x/y(Dodec(x) & Dodec(y) & x # y)@x@y@z((Tet(x)& Tet(y) & Tet(z)) $ (x = y | x = z | y = z))/x/y@z(x # y & (Cube(z) % (z = x | z = y)))/x/y/z@w(x # y & y # z & x # z & 
+    (~Small(w) % (w = x | w = y | w = z)))/x(((Large(x)& Cube(x)) & @y((Large(y)& Cube(y))$ y=x)) $ 
+    ~/y(Dodec(y) $ BackOf(x, y)))s=60869;

@@ -1,0 +1,18 @@
+7.2.3.24206wnds:Windows 86.2SntFC1653856699679D1653857588430S856110 @x (Cube(x) $ @y(Tet(y)$ LeftOf(x, y)))
+;@x (Cube(x) $ x-is-to-the-left-of-every-tet) @x ((Cube(x) & Small(x)) $ 
+                                 /y(Large(y)& BackOf(x, y)))
+;@x ((Cube(x) & Small(x)) $ 
+;                                x-is-in-back-of-a-large-cube) /x (Cube(x) & @y(Tet(y)$ FrontOf(x,y)))
+;/x (Cube(x) & x-is-in-front-of-every-tet) /x (Cube(x) & Large(x) & 
+                               /y(Small(y)& Cube(y) & FrontOf(x, y)))
+;/x (Cube(x) & Large(x) & 
+;                              x-is-in-front-of-a-small-cube) @x ~(@y(Larger(x, y)))
+;@x ~(x-is-larger-than-everything) @x ((Cube(x) & (@y(Tet(y)$ FrontOf(x, y))) ) $ 
+ Large(x))
+;@x ((Cube(x) &  x-is-in-front-of-every-tet ) $  ;Large(x)) @x ( /y((Large(y) & Cube(y))  &  RightOf(x, y)) $ Small(x))
+;@x ( x-is-to-the-right-of-a-large cube $ Small(x)) @x ((/y(Cube(y)& BackOf(x, y)) & 
+        /y(Cube(y)& FrontOf(x, y)) ) $ ~Large(x))
+;@x ((x-is-in-back-of-a-cube & 
+;       x-is-in-front-of-a-cube) $ ~Large(x)) @x (@y ~(BackOf(y, x)) $ Cube(x))
+;@x (there-is-nothing-in-back-of-x $ Cube(x)) @x (Dodec(x) $ /y(Tet(y) & Smaller(x, y)))
+;@x (Dodec(x) $ x-is-smaller-than-some-tet)s=201010;
